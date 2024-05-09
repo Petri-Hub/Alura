@@ -1,0 +1,27 @@
+----Medidas Absolutas
+
+Um pixel no CSS na verdade não é um pixel de verdade.
+
+Existe uma medida chamada ___Point (pt)___, que é geralmente usada sobre fontes, tipografias. Essa medida é utilizada geralmente em folhas de estilo para impressões. Não é recomendada para a estilização em tela.
+
+Outra unidadade é a ___Inches (in)___, que é basicamente a medida de polegadas. Quase nunca é utilizada em projetos visto não há uso prático para elas.
+
+A medida de ___Centímetro e Milímetro (cm / mm)___ são muito conhecidas para nós brasileiros, mas raramente são utilizadas. Geralmente são aplicadas como a medida Points, ou seja, em folhas de impressões.
+
+Outra medida vinda da tipografia é a medida ___Paica (pc)___ muito utilizada também, em tipografias. 1 in = 2,54cm = 25,4mm = 72pt = 6pc
+
+----Medidas Relativas
+
+___Ems (em)___, é uma medida relativa que se baseia no tamanho da font de sua tag pai. Se a div pai que engloba ela tiver um font-size de 16px, 1rem será igual a 16px, 2rem = 32px, 3rem = 48px e assim por diante. A vantagem disso é realizar uma customização mais específica que pode ser alterada inteiramente trocando apenas o valor de fonte do elemento pai.
+
+___Rems (rem)___ uma medida que compartilha o mesmo modo de funcionamento dos Ems, porém, se baseia na raiz de um documento HTML, ou seja em muitos casos: a tag HTML. Por padrão os browsers tendem a ter 16px de font-size.
+
+___Porcentagem (%)___ é uma unidade de medida que se baseia relativamente ao seu elemento pai, é uma unidade difícil de se lidar, porém traz grande facilidade na hora de criar sites responsivos.
+
+___Ex (ex)___ é uma unidade de medida que se baseia no TAMANHO de um único caracter de uma fonte. Esse tamanho pode vir direto com a fonte, ou ser calculada pelo navegador. É quase nunca encontrada e usada muito comunmente em tipografias.
+
+___Character Unit (ch)___ é uma unidade que funciona de modo que, criando um elemento com 100ch, fará com que esse elemento comporte 100 caracteres da fonte utilizada no momento. O problema dessa unidade de medida é que essa unidade de medida só se comporta assim quando utilizando uma fonte MONOSPACE (caracteres ocupam o mesmo tamanho.)
+
+___View Width e View Height (vw / vh)___ Não preciso muito explicar, é uma unidade que se baseia no tamanho da viewport do dispositivo que se encontra utilizando. 1vw = 1% da largura da tela, 100vw, a largura inteira. Isso também se aplica com o View Height (vh).
+
+___View Min e View Max (vmin / vmax)___ são unidades de medida que se baseiam no maior ou menor número em relação a tela em uso. Se tivessemos uma tela de 1600x900, 1vmin seria igual a 9px pois o menor valor é 900px, e 1% deste valor é 9px. E 1vmax seria 16px, pois 1% de 1600 é 16px.

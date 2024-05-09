@@ -1,0 +1,4 @@
+Pelo que eu entendi, o React de acordo com muitos desenvolvedores ficará no ar ainda por um bom tempo, não só isso mas é um framework interessante pois não só permite o desenvolvimento de projetos para vários sistemas, desde sites até aplicativos androids, como também tem uma grande taxa de necessidade no mercado. Acredito que seja o melhor Framework para aprender primeiro.
+
+O Angular 2 parece interessante, mas pelo que disseram é uma arquitetura completa MVC, o que faz com que seja de certa forma complexa aprender, mas que garante uma boa estrutura para qualquer projeto.
+

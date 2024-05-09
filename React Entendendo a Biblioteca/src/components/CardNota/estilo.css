@@ -1,0 +1,17 @@
+.card {
+    font-family: 'roboto';
+    border: 5px solid black;
+    border-top: 5px solid red;
+    border-radius: 0.75rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card__titulo {
+    font-weight: bold;
+    color: black;
+}
+
+.card__texto{
+    color: black;
+}

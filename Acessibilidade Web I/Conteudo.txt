@@ -1,0 +1,1 @@
+A questão da acessiblidade, como por exemplo para cegos não só se baseia em linhas adicionais de acessibilidade, mas como também uma questão de design

@@ -1,0 +1,18 @@
+<html>
+    <input type="text">
+    <input type="button" value="Limpar Input">
+
+    <script>
+
+        var input = document.querySelector('input')
+        input.focus()
+        var button = document.querySelector('input[type=button]')
+
+        function limpar_focar(){
+            input.value = ""
+            input.focus()
+        }
+
+        button.onclick = limpar_focar
+    </script>
+</html>

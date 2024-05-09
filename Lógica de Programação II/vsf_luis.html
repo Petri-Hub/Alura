@@ -1,0 +1,19 @@
+<canvas width='600' height='400'></canvas>
+
+<script>
+
+    screen = document.querySelector('canvas')
+    brush = screen.getContext('2d')
+
+    brush.fillStyle = 'gray'
+    brush.fillRect(0, 0, 600, 400)
+
+    brush.fillStyle = 'red'
+    function drawCircle(evento){
+        brush.beginPath()
+        brush.arc(evento.pageX, evento.pageY, 10, 0, 2* 3.14)
+        brush.fill()
+    }
+
+    screen.onclick = drawCircle;
+</script>

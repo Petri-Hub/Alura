@@ -1,0 +1,29 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function desenhaEsquadro(xa, ya, xc, yc, cor){
+        //Triângulo preto
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.moveTo(xa, ya);
+        pincel.lineTo(xa, yc);
+        pincel.lineTo(xc, yc);
+        pincel.fill();
+        
+        //Triângulo branco
+        pincel.fillStyle="white";
+        pincel.beginPath();
+        pincel.moveTo(xa+50, ya+125);
+        pincel.lineTo(xa+50, yc-50);
+        pincel.lineTo(yc-125, yc-50);
+        pincel.fill();
+    }
+
+
+    desenhaEsquadro(50, 50, 400, 400, 'black')
+
+</script>

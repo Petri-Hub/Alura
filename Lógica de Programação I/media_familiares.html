@@ -1,0 +1,17 @@
+<html>
+    <script>
+        var totalIdades = 0;
+        var mediaIdades = 0;
+        var numeroDeFamiliares = parseInt(prompt('Digite o número de pessoas na sua família:'))
+        while(isNaN(numeroDeFamiliares)){var numeroDeFamiliares = prompt('Digite o número de pessoas na sua família:')}
+        
+        for(i=0; i<numeroDeFamiliares; i++){
+            var idade = parseInt(prompt('Digite a idade:'))
+            while(isNaN(idade)){var idade = prompt('Digite a idade:')}
+            totalIdades += idade
+            mediaIdades = totalIdades/numeroDeFamiliares
+        }
+
+        document.write("O média de idades é: " + mediaIdades)
+    </script>
+</html>

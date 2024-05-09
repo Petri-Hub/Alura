@@ -1,0 +1,32 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.forumlario__input__titulo{
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-radius: .5rem;
+}
+
+.forumlario__input__texto{
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+
+.formulario__botao {
+    border-radius: .5rem;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

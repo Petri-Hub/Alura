@@ -1,0 +1,156 @@
+header{
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+.box{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: green;
+}
+
+footer{
+    text-align: center;
+    background-image: url(Images/bg.jpg);
+    padding: 20px 0px;
+}
+
+#copyright{
+    margin-top: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+main{
+    margin: 0 auto;
+    width: 940px;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+form label, legend{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.inputPadrao{
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#submitButton{
+    font-size: 20px;
+    width: 200px;
+    height: 45px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+#submitButton:hover{
+    background-color: white;
+    border: 2px solid orangered;
+    color: orangered;
+    cursor: pointer;
+}
+
+#submitButton:active{
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    cursor: pointer;
+}
+
+.checkbox{
+    margin: 30px 0px;
+    font-weight: 100;
+}
+
+.smallText{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.radioBox{
+    margin-bottom: 30px;
+}
+
+table{
+    margin: 30px 0px;
+}
+
+thead{
+    background-color: orangered;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media screen and (max-width: 480px){
+    .box, main{
+        width: auto;
+    }
+
+    h1, main{
+        text-align: center;
+    }
+
+    .inputPadrao{
+        margin: 0 auto 30px auto;
+        width: 80%;
+    }
+
+    table{
+        margin: 0 auto 3em auto;
+    } 
+
+    nav{
+        position: static;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+    }
+}

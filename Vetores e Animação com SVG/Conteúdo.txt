@@ -1,0 +1,21 @@
+Para se criar um SVG basta utilizar a tag <svg></svg>
+
+cx = Cordenada X
+cy = Cordenada Y
+
+--Letras dentro da tag <path d="">
+
+   M = move até
+   L = linha até
+   H = linha horizontal até
+   V = linha vertical até
+   C = curva até
+   S = curva suave até
+   Q = curva de Bézier
+   T = curva de Bézier suave
+   A = arco elíptico
+   Z = fecha path
+
+Todas estas letras possuem seus valores Máiusculos e Minúsculos, e geralmente, teve a ver com a relatividade. Letra Maiúscula, posição absoluta, Letra Minúscula, posição relativa.
+
+A letra Z não precisa de parâmetro.

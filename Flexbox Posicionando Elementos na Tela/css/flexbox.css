@@ -1,0 +1,107 @@
+.cabecalhoPrincipal .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+    margin-left: 16px;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    /* O FLEX FLOW é basicamente a propriedade DIRECTION e WRAP juntas */
+    flex-flow: column wrap;
+    height: 250px;
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-video{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+    
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+    
+    .conteudoPrincipal .container{
+        flex-direction: column;
+    }
+    
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+    
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center  ;
+        width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    .videoSobre-sobre .container{
+        flex-direction: column;
+
+    }
+
+    .videoSobre-video{
+        margin: 0 auto;
+    }
+}

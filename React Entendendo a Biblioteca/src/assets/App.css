@@ -1,0 +1,6 @@
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    padding: 2rem;
+}

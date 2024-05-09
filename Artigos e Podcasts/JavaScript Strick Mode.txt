@@ -1,0 +1,5 @@
+"use strict"
+
+O JavaScript, muitas vezes no nosso dia dia acaba autocorrigindo erros que deveriam falhar o nosso projeto visando efetivar a funcionalidade do código. Porém em muitos casos, isso não é legal, pois abre porta para falhas de segurança, instabilidade de código e etc.
+
+Por isso é possível utilizar um modo do JS nomeado de "Strick Mode". Para isso bastar escrever EXATAMENTE -> "use strict" <- Com as aspas inclusas no início do projeto. Assim o JS agora declará mais erros que ele normalmente já teria "corrigido".

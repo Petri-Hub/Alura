@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto';
+    color: white;
+    /* O hexademial funciona com o alfabeto 0123456789ABCDEF na onde 0 = Ausência de luz e F = Máximo de luz */
+    background-color: #222222;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+}
+
+ul li {
+    font-size: 25px;
+}
+
+#banner{
+    width: 100%;
+    height: 400px;
+}
+
+#main-text{
+    border: 3px solid white;
+    padding: 30px;
+    margin: 30px;
+    font-size: 20px; 
+}
+
+p{
+    font-size: 30px; 
+    text-align: center;
+}
+
+strong{
+    color: red;
+}
+
+ul.lista{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+ul.lista li{
+    font-style: italic;
+    color: lightgreen;
+}
+
+.beneficios{
+    background-color: #333333;
+}
+
+.principal{
+    background-color: #333333; 
+}
+
+#closeImg{
+    width: 50%;
+    height: 150px;
+
+}

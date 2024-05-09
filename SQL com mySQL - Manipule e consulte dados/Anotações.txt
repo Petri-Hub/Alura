@@ -1,0 +1,7 @@
+Comandos DDL (Data Defiinition Language) - São os comandos usados para criar a "estrutura" do banco de dados, como: criar tabelas, criar um banco, apagar um índice, etc.
+
+Comandos DML (Data Manipulation Language) - São os comandos usados para gerenciar os dados, como: incluir, alterar, editar, e realizar consultas etc.
+
+Comandos DCL (Data Control Language) - Permite administrar o Banco da Dados em questões não relacionadas a sua estrutura, como permissões, controle de acesso, gerenciar usuários, aonde ele vai ser armazenado no disco, etc.
+
+

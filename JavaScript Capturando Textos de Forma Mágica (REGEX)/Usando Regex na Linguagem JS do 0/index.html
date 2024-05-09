@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testando pattern</title>
+</head>
+<body>
+    <form>
+        <input pattern="[0-9]*">
+        <input type="submit" value="Enviar dados">
+    </form>
+    <script>
+
+        var target = '11a22b33c'
+
+        //Pode ser criada assim a expresssão
+        //var expression = new RegExp('(\\d\\d)(\\w)', 'g');
+        //Ou mais facilmente assim, removendo a nescessidade de escapar duas vezes
+        var expression = /(\d\d)(\w)/g;
+
+        //console.log(expression.test(target))
+
+        while (resultado = expression.exec(target)){
+            //console.log(resultado)
+            //console.log(expression.lastIndex)
+        }
+
+        //REPLACE
+        var fraseGay = 'Parabens/meu/amigo,/eu/sou/seu/fã'
+        console.log(fraseGay)
+        fraseGay = fraseGay.replace(/\//g, " ")
+        console.log(fraseGay)   
+
+        //SPLIT
+        var csv1 = '102,203;1065-1823'
+        //Utilizando o método split de maneira normal
+        console.log(csv1.split(','))
+        //Utilizando o método split utilizando expressões regulares
+        console.log(csv1.split(/[,;-]/g))
+
+        //MATCH
+        codigos = 'A232B3284J3847U18623H3746N38749'
+        codigosSeparados = codigos.match(/[A-Za-z]\d+/g)
+        console.log(codigos, codigosSeparados)
+    </script>
+</body>
+
+    

@@ -1,0 +1,12 @@
+{
+  "name": "testando-conceitos",
+  "version": "1.0.0",
+  "description": "Aplicando conceitos do curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Petri",
+  "license": "ISC",
+  "type": "module"
+}

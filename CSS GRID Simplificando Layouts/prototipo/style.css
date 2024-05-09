@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 56px; 
+    padding: 0px 40px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 0px black;
+}
+
+h2.nav_button{
+    display: flex;
+    color: white;
+    font-family: 'Roboto';
+    margin: 0px 10px;
+}
+
+h2.nav_button:hover{
+    color: chartreuse;
+    cursor: pointer;
+}
+
+h2.nav_button::before{
+    margin-right: 10px;
+}
+
+h2.inicio::before{
+    content: "🏠";
+}
+
+h2.aplicativos::before{
+    content: "📱";
+}
+
+h2.jogos::before{
+    content: "👾";
+}
+
+main{
+    padding: 0px 40px 40px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.first_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+        "fortnite fortnite fortnite pubg"
+        "fortnite fortnite fortnite slack"
+        "categoria categoria csgo whatzap"
+    ;
+}
+
+.fortnite_card{
+    grid-area: fortnite;
+    background-image: url(../assets/img/fortnite.jpg);
+}
+
+.csgo_card{
+    grid: csgo;
+    background-image: url(../assets/img/cs-go.jpg);
+}
+
+.slack_card{
+    grid-area: slack;
+    background-image: url(../assets/img/slack.png);
+}
+
+.whatzap_card{
+    grid-area: whatzap;
+    background-image: url(../assets/img/whatsapp.png);
+}
+
+.pubg_card{
+    grid-area: pubg;
+    background-image: url(../assets/img/pubg.jpg);
+}
+
+.categoria_card{
+    grid-area: categoria;
+    box-shadow: none !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.categoria_card:hover{
+    transform: scale(1) !important;
+    cursor: pointer;
+}
+
+.categoria_sub_card{
+    color: white;
+    box-shadow: 0 0 5px 0px black;
+    background-color: black;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.5s;
+}
+
+.categoria_sub_card:hover{
+    transform: scaleY(1.1);
+}
+
+article.card{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 5px 0px black;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+article.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: brown;
+    width: 100%;
+    height: 40px;
+}
+
+h3{
+    color: white;
+    
+}
+
+div.fileira_cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.small_card{
+    background-color: white;
+    box-shadow: 0 0 5px 0px black;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.small_card img{
+    width: 100%;
+    height: 50%;
+    background-image: center;
+    background-size: cover;
+    object-fit: cover;
+    
+}
+
+.small_card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.subtitle{
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+
+.text{
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px 48px 16px;
+}

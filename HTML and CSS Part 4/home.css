@@ -1,0 +1,196 @@
+body{
+	font-family: 'Montserrat', 'sans-serif';
+}
+
+header{
+    background-color: lightgray;
+    padding: 10px 0;
+}
+
+.box{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 90px;
+    right: 0px;
+}
+
+nav ul{
+	width: auto;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+	transition:  color 0.1s;
+}
+
+nav a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: green;
+}
+
+h1 img{
+	width: 130px;
+}
+
+.banner {
+	/* Utilizando a função CALC do CSS3 para fazer cálculos dentro do CSS */
+	width: calc(50% + 25% + 25%);
+}
+
+section{
+	padding: 30px 60px;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	font-weight: bold;
+	clear: left;
+	/* Criando sombra no TEXTO */
+	text-shadow: 1px 1px 0 orangered;
+}
+
+.principal{
+	margin: 3em 0;
+	background-color: #FEFEFE;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.principal em{
+	font-style: italic;
+}
+
+.utensilios{
+	width: 160px;
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+
+.beneficios{
+	background-color: #888888;
+	padding-top: 4em;
+	
+}
+
+.contentBeneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.listaBeneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.imagemBeneficios{
+	width: 60%;
+	cursor: pointer;
+	/* ARGUMENTOS do box-shadow: ValorX ValorY BlurDaSombra IntensidadeDaBorda Cor */
+	/* Colocando várias sombras */
+	box-shadow: 10px 10px 0px 0px black, -10px -10px 0px 0px orangered;
+	opacity: 1;
+	/* Utilizando MILISEGUNDOS para fazermos a transição */
+	transition: 400ms;
+}
+
+.imagemBeneficios:hover{
+	opacity: 0.3;
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+.itens::before{
+	content: "✱ ";
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa{
+	padding: 0 3em;
+	/* Não pode ser background-color quando utilizando gradient */
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto 3em auto;
+}
+
+footer{
+    text-align: center;
+    background-image: url(Images/bg.jpg);
+	/* Criando sombra INTERNA utilzando o argumento INSET */
+	box-shadow: inset 0 0 20px 0px orangered;
+    padding: 20px 0px;
+
+}
+
+#copyright{
+    margin-top: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 480px){
+	.box, .principal, .contentBeneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.imagemBeneficios{
+		margin-top: 3em;
+	}
+
+	.listaBeneficios, .imagemBeneficios{
+		width: 100%;
+	}
+}

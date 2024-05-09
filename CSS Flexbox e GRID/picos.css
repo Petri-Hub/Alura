@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+}
+
+article.map-border{
+    padding: 20px;
+    background-color: #171717;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0px black;
+}
+
+section#map{
+    height: 50vh;
+    width: 60vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+p.map-subtitle{
+    color: white;
+    font-family: 'Roboto';
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+REM -> Root Ephemeral -> O tamanho de qualquer coisa colocada como REM se baseará no font-size do HTML (Roots).
+
+EM -> Ephemeral -> O tamanho de qualquer coisa colocada como EM se baseará no font-size da tag mãe.
+
+EM: Casos isolados
+REM: Seguindo padrão, seja do projeto seja do Browser
+
+SVG é uma imagem criada a partir de uma instrução para o computador

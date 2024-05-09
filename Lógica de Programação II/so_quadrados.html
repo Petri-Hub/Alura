@@ -1,0 +1,22 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    screen = document.querySelector('canvas')
+    brush = screen.getContext('2d')
+
+    function drawSquares(x, y, size, color){
+
+        brush.fillStyle = color
+        brush.fillRect(x, y, size, size, color)
+        brush.fillStroke = 'black'
+        brush.strokeRect(x, y, size, size, color)
+    }
+    
+    drawSquares(0, 0, 100, 'green')
+    drawSquares(100, 0, 100, 'green')
+    drawSquares(200, 0, 100, 'green')
+    drawSquares(300, 0, 100, 'white')
+
+
+</script>

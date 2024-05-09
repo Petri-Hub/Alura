@@ -1,0 +1,38 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(numero){
+        return Math.round(Math.random() * numero)
+
+    }
+
+
+    var numeroMaximo = prompt('Digite um número para ser o maior número de seu intervalo: ')
+    var numeroUsuario = prompt('Digite um número de 0 a '+ numeroMaximo +':')
+    var numeroPensado = sorteia(numeroMaximo)
+
+    if(numeroUsuario == numeroPensado){
+        mostra('Você acertou, o número pensado foi: '+ numeroPensado)
+        if(numeroUsuario == numeroPensado){mostra('Seu chute foi igual o número pensado')}
+    } else {
+        mostra('Você errou, o número pensado foi: '+ numeroPensado)
+        if(numeroUsuario > numeroPensado){mostra('Seu chute foi maior que o número pensado')}
+        if(numeroUsuario < numeroPensado){mostra('Seu chute foi menor que o número pensado')}
+    }
+
+    
+        
+
+</script>
