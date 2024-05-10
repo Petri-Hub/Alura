@@ -19,6 +19,12 @@ int main()
       printf("Seu chute foi: %d\n", guess);
 
       int guessed = guess == secretNumber;
+      int isNegative = guess < 0;
+
+      if(isNegative){
+         printf("Números negativos não são válidos");
+         continue;
+      }
 
       if (guessed)
       {
