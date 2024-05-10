@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -7,35 +8,41 @@ int main()
    printf("* Bem vindo ao nosso jogo de advinhacao *\n");
    printf("*****************************************\n");
 
-   int secretNumber = 123;
-   int guess;
-   int tries = 3;
+   srand(time(0));
 
-   while (tries > 0)
+   int secretNumber = rand() % 100;
+   int guessed = 0;
+   int guess;
+   int tries = 0;
+   double points = 1000;
+
+   printf("%d", secretNumber);
+
+   while (1)
    {
 
       printf("Chute um número:\n");
       scanf("%d", &guess);
       printf("Seu chute foi: %d\n", guess);
 
-      int guessed = guess == secretNumber;
-      int isNegative = guess < 0;
-
-      if(isNegative){
-         printf("Números negativos não são válidos");
+      if (guess < 0)
+      {
+         printf("Números negativos não são válidos\n");
          continue;
       }
 
+      guessed = guess == secretNumber;
+      tries++;
+      points -= abs((guess - secretNumber) / (double)2);
+
       if (guessed)
       {
-         printf("Você acertou!");
+         printf("Você acertou na %d tentativa!\n\n", tries);
+         printf("Pontos: %d\n", points);
          break;
       }
 
-      tries = tries - 1;
-
       int isSmaller = guess < secretNumber;
-      int isBigger = guess > secretNumber;
 
       if (isSmaller)
       {
@@ -48,6 +55,8 @@ int main()
          printf("Você errou!\n");
          printf("O número secreto era menor!\n");
       }
+
+      printf("Pontos: %.1f\n", points);
    }
 
    return 0;
