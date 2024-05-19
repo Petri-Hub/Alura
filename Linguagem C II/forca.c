@@ -1,8 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
+
+void showWelcomeMessage(){
+    printf("*******************");
+    printf("*  Jogo da Forca  *");
+    printf("*******************");
+}
+
 int main()
 {
+    showWelcomeMessage();
+    
     char secretPhrase[20];
     char guesses[26];
     int tries = 0;
